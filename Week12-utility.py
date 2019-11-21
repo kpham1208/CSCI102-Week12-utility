@@ -35,3 +35,7 @@ def ScoreFinder(players, scores, player):
         else:
             print('OUTPUT player not found')
     
+def Union(scores, players2):
+    result = scores.extend(players2)
+    return result
+
