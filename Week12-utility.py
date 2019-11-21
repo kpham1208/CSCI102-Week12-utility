@@ -39,3 +39,10 @@ def Union(scores, players2):
     result = scores.extend(players2)
     return result
 
+def Intersection(players, players2):
+    result = []
+    for i in players:
+        if players[i] == players2[i]:
+            result.append(players[i])
+            print('OUTPUT ', result)
+
