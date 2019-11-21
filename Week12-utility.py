@@ -5,3 +5,8 @@
 
 def PrintOutput(String_Input):
     print(String_Input)
+    
+def LoadFile(File_Name):
+    with open(File_Name, 'r') as f:
+        return [line.strip('\n') for line in f]
+
