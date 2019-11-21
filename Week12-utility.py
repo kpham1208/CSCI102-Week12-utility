@@ -25,3 +25,13 @@ def FindWordCount(a, string):
                 wordcount += 1
         return wordcount
 
+def ScoreFinder(players, scores, player):
+    j = 0
+    k = j + len(player)
+    for i in players:
+        if i[j:k] == player:
+            players[player] = scores[player]
+            print('OUTPUT ', player, 'got a score of', score[i])
+        else:
+            print('OUTPUT player not found')
+    
