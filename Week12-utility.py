@@ -46,3 +46,9 @@ def Intersection(players, players2):
             result.append(players[i])
             print('OUTPUT ', result)
 
+def Notin(players, players2):
+    result = []
+    for i in players:
+        if players[i] != players2[i]:
+            result.append(players[i])
+            print('OUTPUT ', result)
