@@ -16,3 +16,12 @@ def UpdateString(string, character, position):
     result = ''.join(string)
     print(result)
 
+def FindWordCount(a, string):
+        wordcount = 0
+        j = 0
+        k = j + len(string)
+        for line in a:
+            if line[j:k] == string:
+                wordcount += 1
+        return wordcount
+
