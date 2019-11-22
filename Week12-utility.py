@@ -1,4 +1,4 @@
-# GITHUB URL
+# https://github.com/kpham1208/CSCI102-Week12-utility
 #  Kenny Pham
 # CSCI 102 - Section E
 #  Week 12 - Part B
@@ -26,17 +26,17 @@ def FindWordCount(a, string):
         return wordcount
 
 def ScoreFinder(players, scores, player):
-    j = 0
-    k = j + len(player)
-    for i in players:
-        if i[j:k] == player:
-            players[player] = scores[player]
-            print('OUTPUT ', player, 'got a score of', score[i])
-        else:
-            print('OUTPUT player not found')
+    if player in players:
+        x = players.index(player)
+        for z in scores:
+            if x == scores.index(z):
+                points = z
+        print('OUTPUT ', player, 'got a score of', points)
+    else:
+        print('OUTPUT player not found')
     
 def Union(scores, players2):
-    result = scores.extend(players2)
+    result = ', '.join(str(scores) for x in players2)
     return result
 
 def Intersection(players, players2):
