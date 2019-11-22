@@ -36,7 +36,8 @@ def ScoreFinder(players, scores, player):
         print('OUTPUT player not found')
     
 def Union(scores, players2):
-    result = ', '.join(str(scores) for x in players2)
+    scores2 = [str(i) for i in scores]
+    result = scores2 + players2
     return result
 
 def Intersection(players, players2):
