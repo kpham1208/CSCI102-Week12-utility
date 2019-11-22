@@ -42,10 +42,11 @@ def Union(scores, players2):
 
 def Intersection(players, players2):
     result = []
-    for i in players:
-        if players[i] == players2[i]:
-            result.append(players[i])
-            print('OUTPUT ', result)
+    for x in players:
+        for y in players2:
+            if x == y:
+                result.append(x)
+    return result
 
 def Notin(players, players2):
     result = []
